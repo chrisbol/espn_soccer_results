@@ -58,5 +58,5 @@ class getMatches(scrapy.Spider):
             l.add_xpath('away_red_cards', '//tbody/tr/td[@id="away-red-cards"]/text()')
             l.add_xpath('home_saves', '//tbody/tr/td[@id="home-saves"]/text()')
             l.add_xpath('away_saves', '//tbody/tr/td[@id="away-saves"]/text()')
-            yield l.load_item()
+        yield l.load_item()
 
